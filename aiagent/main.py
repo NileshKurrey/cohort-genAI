@@ -4,6 +4,7 @@ from langchain.chat_models import init_chat_model
 from dotenv import load_dotenv
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from langchain_core.prompts import PromptTemplate
+from langchain.chains import LLMChain
 load_dotenv()
 
 if not os.environ.get("GOOGLE_API_KEY"):
@@ -63,7 +64,7 @@ function App() {
 export default App;
 """)
 
-systemMessage = SystemMessage(content=SYSTEM_PROMPT)
+chain = llm.chain
 
 
 print(
