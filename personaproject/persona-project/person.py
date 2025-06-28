@@ -7,7 +7,7 @@ load_dotenv()
 
 
 api_key = os.environ["MISTRAL_API_KEY"]
-model = "mistral-large-latest"
+model = "codestral-2501"
 
 client = Mistral(api_key=api_key)
 # Chain Of Thought: The model is encouraged to break down reasoning step by step before arriving at an answer.
@@ -67,7 +67,7 @@ while True:
     
     bot_response = decoded.get("content")
         
-    print("🤖 Hitesh Sir:", bot_response)
+    print("🤖 Hitesh Sir:", bot_response.response)
     messages.append({"role": "assistant", "content": assistant_content})
     
     
