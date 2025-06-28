@@ -100,14 +100,3 @@ This project is structured around several key components:
 - python-dotenv
 - google-generativeai (via langchain.chat_models)
 
-## 🔒 Security Note
-
-This application executes system commands and has access to your file system. Use caution when running commands from untrusted sources.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-## 📜 License
-
-This project is licensed under the MIT License.
